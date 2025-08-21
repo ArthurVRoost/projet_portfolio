@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('degree')->nullable();
             $table->string('email')->nullable();
             $table->string('freelance')->nullable();
-            $table->string('src')->nullable();
             $table->text('subtext')->nullable();
             $table->timestamps();
         });

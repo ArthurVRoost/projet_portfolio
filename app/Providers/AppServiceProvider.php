@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\About;
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\Facades\View;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,6 +20,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $nav = ['partials.navFront', 'partials.navBack'];
+
+        View::composer($nav, function ($view) {
+            $user = About::first();
+            $view->with('user', $user);
+        });
     }
 }
