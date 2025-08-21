@@ -26,7 +26,7 @@
 
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#home" class="nav-link active">
+                <a href="#home" class="nav-link ">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('admin.dashboard') }}" class="nav-link">
                     <i class="fas fa-sign-in-alt"></i>
                     Log In
                 </a>

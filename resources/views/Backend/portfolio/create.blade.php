@@ -3,8 +3,8 @@
 @section('title', 'Créer un portfolio')
 
 @section('content')
-    <h1>Créer un portfolio</h1>
-    <form action="{{ route('portfolios.store') }}" method="POST" enctype="multipart/form-data">
+    <h1 class="porfolioTitreBack">Créer un portfolio</h1>
+    <form class="portfolioContentBack" action="{{ route('portfolios.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <label>Image :</label>
         <input type="file" name="img" required>

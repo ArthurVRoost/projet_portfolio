@@ -12,7 +12,7 @@
 <body>
 
     
-    @include('partials.navFront')
+    @include('partials.navBack')
 
     <main class="container">
         @yield('content')

@@ -40,6 +40,7 @@ Route::prefix('admin')->group(function () {
     Route::delete('skills/{id}', [SkillController::class, 'destroy'])->name('skills.destroy');
 
     // PORTFOLIO CRUD
+    Route::get('portfolios', [PortfolioController::class, 'index'])->name('portfolios.index');
     Route::get('portfolios/create', [PortfolioController::class, 'create'])->name('portfolios.create');
     Route::post('portfolios', [PortfolioController::class, 'store'])->name('portfolios.store');
     Route::get('portfolios/{id}/edit', [PortfolioController::class, 'edit'])->name('portfolios.edit');
@@ -69,3 +70,11 @@ Route::prefix('admin')->group(function () {
     Route::get('messages/{id}', [MessageController::class, 'show'])->name('messages.show');
     Route::delete('messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 });
+
+Route::get('/admin/dashboard', function () {
+    return view('Backend.admin'); 
+})->name('admin.dashboard');
+
+Route::get('/logout', function () {
+    return redirect()->route('home');
+})->name('logout');

@@ -3,10 +3,10 @@
 @section('title', 'Portfolios')
 
 @section('content')
-    <h1>Portfolios</h1>
-    <a href="{{ route('portfolios.create') }}">Créer un nouveau portfolio</a>
+    <h1 class="portfolioTitreBack">Portfolios</h1>
+    <a class="portfolioTitreBack" href="{{ route('portfolios.create') }}">Créer un nouveau portfolio</a>
 
-    <ul>
+    <ul class="portfolioContentBack">
         @foreach ($portfolios as $portfolio)
             <li>
                 <img src="{{ asset($portfolio->img) }}" alt="Portfolio" width="150">
