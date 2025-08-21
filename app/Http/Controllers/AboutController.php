@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
+    
     public function edit($id){
         $about = About::findOrFail($id);
         return view('Backend.about.edit', compact('about'));

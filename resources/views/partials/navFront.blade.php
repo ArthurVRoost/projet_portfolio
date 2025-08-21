@@ -71,8 +71,6 @@
 
         <div class="footer">
             <p>© Copyright <strong>iPortfolio</strong><br>
-            Designed by <a href="#">BootstrapMade</a><br>
-            Back-End by <a href="#">Gary Axen</a></p>
         </div>
     </nav>
 

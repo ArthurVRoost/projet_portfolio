@@ -34,8 +34,8 @@ class TestimonialSeeder extends Seeder
             ],
             [
                 'comment' => 'Proin iaculis purus consequat sem cure digni ssim donec porttora entum suscipit rhoncus. Accusantium quam ultrices eget id, aliquam eget nihh et. Maecan aliquam, risus at semper.',
-                'img' => 'storage/portfolio-assets/testimonials-4.jpg',
-                'name' => 'Jena Lewis',
+                'img' => 'storage/portfolio-assets/testimonials-5.jpg',
+                'name' => 'John Lewis',
                 'positions' => 'CEO &amp; Founder',
             ],
         ]);
