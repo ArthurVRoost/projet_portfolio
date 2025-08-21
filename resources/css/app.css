@@ -8,8 +8,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    min-height: 100vh;
+    
 }
 
 .sidebar {
@@ -186,4 +185,7 @@ body {
 .footer a {
     color: #4a9eff;
     text-decoration: none;
+}
+.page2{
+    margin-left: 20%;
 }

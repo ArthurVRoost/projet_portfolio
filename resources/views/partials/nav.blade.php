@@ -26,31 +26,37 @@
 
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#home" class="nav-link active">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#about" class="nav-link">
                     <i class="fas fa-user"></i>
                     About
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#portfolio" class="nav-link">
                     <i class="fas fa-briefcase"></i>
                     Portfolio
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#services" class="nav-link">
                     <i class="fas fa-cog"></i>
                     Services
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#testemonials" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    Testemonials
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
                     <i class="fas fa-envelope"></i>
                     Contact
                 </a>
@@ -71,7 +77,7 @@
     </nav>
 
     <main class="main-content">
-        <div class="hero-section">
+        <div id="home" class="hero-section">
             <h1 class="hero-title">Gary Axen</h1>
             <p class="hero-subtitle">I'm a Developer</p>
         </div>

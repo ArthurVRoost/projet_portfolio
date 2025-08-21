@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('icon')->nullable();
+            $table->enum("icon", ["fa-solid fa-chart-line", "fa-solid fa-gear", "fa-solid fa-image", "fa-solid fa-laptop", "fa-solid fa-globe", "fa-solid fa-list-check"]);
             $table->string('title');
             $table->text('text')->nullable();
             $table->timestamps();
