@@ -23,8 +23,8 @@ class AppServiceProvider extends ServiceProvider
         $nav = ['partials.navFront', 'partials.navBack'];
 
         View::composer($nav, function ($view) {
-            $user = About::first();
-            $view->with('user', $user);
+            $about = About::first();
+            $view->with('about', $about);
         });
     }
 }

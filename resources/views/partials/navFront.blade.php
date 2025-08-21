@@ -1,7 +1,7 @@
 <nav class="sidebar">
         <div class="profile-section">
             <div class="profile-image">
-                <img src="https://via.placeholder.com/80x80/4a9eff/ffffff?text=GA" alt="Gary Axen">
+                <img src="{{ $about->avatar->image }}" alt="Gary Axen">
             </div>
             <h2 class="profile-name">Gary Axen</h2>
             
@@ -76,9 +76,4 @@
         </div>
     </nav>
 
-    <main class="main-content">
-        <div id="home" class="hero-section">
-            <h1 class="hero-title">Gary Axen</h1>
-            <p class="hero-subtitle">I'm a Developer</p>
-        </div>
-    </main>
+    
