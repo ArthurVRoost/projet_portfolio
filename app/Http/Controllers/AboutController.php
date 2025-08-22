@@ -17,10 +17,6 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         $about = About::findOrFail($id);
-
-        
-
-       
         $about->update([
             'subtitle'  => $request->subtitle,
             'birthdate' => $request->birthdate,
@@ -34,22 +30,16 @@ class AboutController extends Controller
             'subtext'   => $request->subtext,
         ]);
 
-       
+    //    VERIFIE SI UNE PHOTO EXISTE, SI OUI ON MET A JOUR ET AVANT CA IL CHERCHE L'IMAGE EXISTANTE 
         if ($request->hasFile('avatar')) {
             $path = $request->file('avatar')->store('about-avatars', 'public');
-
-            
             $avatar = Avatar::where('about_id', $about->id)->first();
-
             if ($avatar) {
-    
                 $avatar->update([
                     'image' => 'storage/' . $path
                 ]);
             } 
         }
-
-        return redirect()->route('about.edit', $about->id)
-                         ->with('success', 'Profil About mis à jour avec succès !');
+        return redirect()->route('about.edit', $about->id);
     }
 }
