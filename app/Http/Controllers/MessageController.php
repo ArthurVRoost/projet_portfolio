@@ -19,6 +19,7 @@ class MessageController extends Controller
         'sujet' => $request->sujet,
         'message' => $request->message,
     ]);
+    // VU QU'ON VEUT PAS REDIRIGER VERS UNE QUELCONQUE VIEW ON AFFICHE UN MESSAGE POUR FAIRE COMPRENDRE QUE CA A MARCHE
     return back()->with('success', 'Message envoyé avec succès !');
     }
     public function destroy($id){
