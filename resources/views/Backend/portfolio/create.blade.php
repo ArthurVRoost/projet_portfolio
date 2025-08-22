@@ -7,7 +7,7 @@
 
 <div class="portfolioCreate-container">
     <h1 class="portfolioCreate-title">Créer un portfolio</h1>
-    
+    {{-- ENCTYPE POUR LES IMAGES --}}
     <form class="portfolioCreate-form" action="{{ route('portfolios.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         
