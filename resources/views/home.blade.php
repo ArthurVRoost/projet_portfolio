@@ -12,19 +12,39 @@
     </main>
     <div class="page2">
         <div>
-            <h2 class="mt-5" id="about">About</h2>
-            <img src="{{ asset($about->avatar->image ?? 'default-avatar.jpg') }}" alt="Avatar" style="width:150px;">
-            <p><strong>Subtitle:</strong> {{ $about->subtitle }}</p>
-            <p><strong>Birthdate:</strong> {{ $about->birthdate }}</p>
-            <p><strong>City:</strong> {{ $about->city }}</p>
-            <p><strong>Age:</strong> {{ $about->age }}</p>
-            <p><strong>Email:</strong> {{ $about->email }}</p>
-            <p><strong>Freelance:</strong> {{ $about->freelance }}</p>
-            <p>{{ $about->subtext }}</p>
+            <h2 class="mt-5 titreAbout" id="about">About</h2>
+            <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
+            <div class="divAbout">
+                <div class="divAbout1">
+                    <img class="imgAbout" src="{{ asset($about->avatar->image ?? 'default-avatar.jpg') }}" alt="Avatar" >
+                </div>
+                <div class="divAbout2">
+                    <p class="aboutSubtitle"> {{ $about->subtitle }}</p>
+                    <p class="loremAbout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ratione neque, ut blanditiis quod odio necessitatibus quibusdam officia iusto?</p>
+                    <div class="divAbout3"> 
+                        <div class="divAbout4">
+                            <p> <span class="spanAbout">></span>&nbsp;  <strong>Birthdate:</strong> {{ $about->birthdate }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp;  <strong>Website:</strong> {{ $about->website }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp;  <strong>Phone:</strong> {{ $about->phone }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp; <strong>City:</strong> {{ $about->city }}</p>
+                        </div>
+                        <div class="divAbout5">
+                            <p> <span class="spanAbout">></span>&nbsp; <strong>Age:</strong> {{ $about->age }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp; <strong>Degree:</strong> {{ $about->degree }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp; <strong>Email:</strong> {{ $about->email }}</p>
+                            <p> <span class="spanAbout">></span>&nbsp; <strong>Freelance:</strong> {{ $about->freelance }}</p>
+                        </div>
+                    </div>
+                    <p class="divAboutSubtext">{{ $about->subtext }}</p>
+                </div>
+
+            </div>
+            
         </div>
         
         <div>
-            <h2 class="mt-5" id="skills">Skills</h2>
+            <h2 class="mt-5 titreAbout" id="skills">Skills</h2>
+            <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
             <div class="skills-list" style="display:flex; flex-direction:column; gap:15px; margin-top:20px; max-width:600px;">
                 @foreach ($skills as $skill)
                     <div class="skill-item" style="display:flex; align-items:center; gap:10px;">
