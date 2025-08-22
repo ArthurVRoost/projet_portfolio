@@ -23,6 +23,7 @@
             <td>{{ $message->sujet }}</td>
             <td>{{ $message->message }}</td>
             <td>
+                {{-- ON SUBMIT PARCE QUE C4EST MIEUX DAVOIR CONFIRMATION POUR DEL  --}}
                 <form action="{{ route('messages.destroy', $message->id) }}" method="POST" class="messages-delete-form" onsubmit="return confirm('Supprimer ce message ?');">
                     @csrf
                     @method('DELETE')
