@@ -17,8 +17,19 @@ class TestimonialController extends Controller
     }
 
     public function store(Request $request){
-       
-        Testimonial::create($request->all());
+        
+
+        
+        $path = $request->file('img')->store('testimonial-assets', 'public');
+
+        
+        Testimonial::create([
+            'comment' => $request->comment,
+            'img' => 'storage/' . $path,
+            'name' => $request->name,
+            'positions' => $request->positions,
+        ]);
+
         return redirect()->route('testimonials.index');
     }
 
@@ -29,7 +40,22 @@ class TestimonialController extends Controller
 
     public function update(Request $request, $id){
         $testimonial = Testimonial::findOrFail($id);
-        $testimonial->update($request->all());
+
+        
+        $data = [
+            'comment' => $request->comment,
+            'name' => $request->name,
+            'positions' => $request->positions,
+        ];
+
+
+        if ($request->hasFile('img')) {
+            $path = $request->file('img')->store('testimonial-assets', 'public');
+            $data['img'] = 'storage/' . $path;
+        }
+
+        $testimonial->update($data);
+
         return redirect()->route('testimonials.index');
     }
 

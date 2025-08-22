@@ -27,3 +27,312 @@
 .portfolioSpan{
     color: rgb(49, 176, 219);
 }
+
+/* Back end */
+
+
+
+.portfolioIndex-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 25%;
+}
+
+.portfolioIndex-title {
+    color: #153A6C;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portfolioIndex-createLink {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.portfolioIndex-createLink:hover {
+    background-color: #218838;
+    color: white;
+    text-decoration: none;
+}
+
+.portfolioIndex-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolioIndex-item {
+    background-color: #f8f9fa;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolioIndex-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+}
+
+.portfolioIndex-filter {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.portfolioIndex-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.portfolioIndex-editLink {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.portfolioIndex-editLink:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.portfolioIndex-deleteForm {
+    display: inline;
+}
+
+.portfolioIndex-deleteButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.portfolioIndex-deleteButton:hover {
+    background-color: #c82333;
+}
+
+
+/* PAGE EDIT */
+.portfolioEdit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioEdit-title {
+    color: #153A6C;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portfolioEdit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.portfolioEdit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.portfolioEdit-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.portfolioEdit-currentImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #e1e5e9;
+    margin-top: 0.5rem;
+}
+
+.portfolioEdit-fileInput {
+    padding: 0.5rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.portfolioEdit-fileInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.portfolioEdit-textInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.portfolioEdit-textInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.portfolioEdit-submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.portfolioEdit-submitButton:hover {
+    background-color: #0056b3;
+}
+
+.portfolioEdit-imagePreview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+
+/* CREATE */
+
+/* Portfolio Create Styles */
+.portfolioCreate-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioCreate-title {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portfolioCreate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.portfolioCreate-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.portfolioCreate-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.portfolioCreate-fileInput {
+    padding: 0.5rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.portfolioCreate-fileInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.portfolioCreate-textInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.portfolioCreate-textInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.portfolioCreate-submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.portfolioCreate-submitButton:hover {
+    background-color: #218838;
+}
+
+

@@ -3,7 +3,7 @@
 @section('title', 'Liste des Skills')
 
 @section('content')
-<div class="container mt-4">
+<div class="container page3 mt-4 page2">
     <h1>Skills</h1>
     <a href="{{ route('skills.create') }}" class="btn btn-primary mb-3">Ajouter un Skill</a>
 

@@ -1,26 +1,38 @@
 @extends('layouts.backend.app')
 
 @section('content')
-<h1>Ajouter un Testimonial</h1>
+<div class="testimonials-create-container">
+    <h1 class="testimonials-create-title">Ajouter un Testimonial</h1>
 
-<form action="{{ route('testimonials.store') }}" method="POST">
-    @csrf
-    <div class="form-group">
-        <label>Comment</label>
-        <textarea name="comment" class="form-control" required></textarea>
-    </div>
-    <div class="form-group">
-        <label>Image (chemin)</label>
-        <input type="text" name="img" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Positions</label>
-        <input type="text" name="positions" class="form-control" required>
-    </div>
-    <button type="submit" class="btn btn-success mt-2">Enregistrer</button>
-</form>
+    <form action="{{ route('testimonials.store') }}" method="POST" enctype="multipart/form-data" class="testimonials-create-form">
+        @csrf
+
+        
+        <div class="testimonials-create-group">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Écrivez le commentaire ici..." required></textarea>
+        </div>
+
+        
+        <div class="testimonials-create-group">
+            <label >Image</label>
+            <input id="img" type="file" name="img" required>
+        </div>
+
+       
+        <div class="testimonials-create-group">
+            <label >Name</label>
+            <input id="name" type="text" name="name" placeholder="Nom du client" required>
+        </div>
+
+       
+        <div class="testimonials-create-group">
+            <label >Positions</label>
+            <input id="positions" type="text" name="positions" placeholder="Poste ou rôle" required>
+        </div>
+
+        
+        <button type="submit" class="testimonials-create-btn-submit">Enregistrer</button>
+    </form>
+</div>
 @endsection

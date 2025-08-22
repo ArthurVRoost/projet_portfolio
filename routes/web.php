@@ -14,14 +14,16 @@ use Illuminate\Support\Facades\Route;
 
 // ROUTES PUBLIQUES 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
 Route::get('skills', [SkillController::class, 'index'])->name('skills.index');
 Route::get('portfolios', [PortfolioController::class, 'index'])->name('portfolios.index');
 Route::get('services', [ServiceController::class, 'index'])->name('services.index');
 Route::get('testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
 Route::get('contacts', [ContactController::class, 'index'])->name('contacts.index');
 Route::get('about', [AboutController::class, 'index'])->name('about.index');
-Route::get('contact', [ContactController::class, 'index'])->name('contacts.index');
+
+// FORMULAIRE CONTACT FRONT
+Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
+
 // ROUTES ADMIN 
 Route::prefix('admin')->group(function () {
 
@@ -66,7 +68,7 @@ Route::prefix('admin')->group(function () {
     Route::get('contacts/{id}/edit', [ContactController::class, 'edit'])->name('contacts.edit');
     Route::put('contacts/{id}', [ContactController::class, 'update'])->name('contacts.update');
 
-    // MESSAGES
+    // MESSAGES Back-office
     Route::get('messages', [MessageController::class, 'index'])->name('messages.index');
     Route::get('messages/{id}', [MessageController::class, 'show'])->name('messages.show');
     Route::delete('messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');

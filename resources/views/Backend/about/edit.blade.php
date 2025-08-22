@@ -5,7 +5,7 @@
 <div class="about-form-container">
     <h2 class="about-form-title">Modifier le profil About</h2>
 
-    <form action="{{ route('about.update', $about->id) }}" method="POST">
+    <form action="{{ route('about.update', $about->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -59,6 +59,10 @@
             <textarea name="subtext" class="formAbout-textarea">{{ old('subtext', $about->subtext) }}</textarea>
         </div>
 
+        <div class="formAbout-group">
+            <label class="formAbout-label">Image</label>
+            <input type="file" name="avatar">
+        </div>
         <button type="submit" class="submitAbout-button">Mettre à jour</button>
     </form>
 </div>

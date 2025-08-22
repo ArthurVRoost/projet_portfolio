@@ -38,3 +38,365 @@
 .divServiceText{
     margin-left: 5%;
 }
+
+
+
+
+
+/* BACKEND */
+
+
+.serviceIndex-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 25%;
+
+}
+
+.serviceIndex-title {
+    color: #153A6C;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.serviceIndex-createLink {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.serviceIndex-createLink:hover {
+    background-color: #218838;
+    color: white;
+    text-decoration: none;
+}
+
+.serviceIndex-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.serviceIndex-item {
+    background-color: #f8f9fa;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.serviceIndex-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.serviceIndex-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    min-width: 24px;
+}
+
+.serviceIndex-title-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.serviceIndex-description {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.serviceIndex-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+.serviceIndex-editLink {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.serviceIndex-editLink:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.serviceIndex-deleteForm {
+    display: inline;
+}
+
+.serviceIndex-deleteButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.serviceIndex-deleteButton:hover {
+    background-color: #c82333;
+}
+
+
+
+/* CREATE  */
+
+/* Service Create Styles */
+.serviceCreate-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCreate-title {
+    color: #153A6C;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.serviceCreate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.serviceCreate-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.serviceCreate-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.serviceCreate-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.serviceCreate-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceCreate-option {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.serviceCreate-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.serviceCreate-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceCreate-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.serviceCreate-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceCreate-submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.serviceCreate-submitButton:hover {
+    background-color: #218838;
+}
+
+/* EDIT */
+
+
+
+.serviceEdit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.serviceEdit-title {
+    color: #153A6C;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.serviceEdit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.serviceEdit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.serviceEdit-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.serviceEdit-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.serviceEdit-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceEdit-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.serviceEdit-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceEdit-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.serviceEdit-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.serviceEdit-submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.serviceEdit-submitButton:hover {
+    background-color: #0056b3;
+}
+

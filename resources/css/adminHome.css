@@ -1,49 +1,56 @@
-.adminA{
-    text-decoration: none;
-    color: black;
-}
-.h3ADMIN{
-    color: white;
-    margin-top: 0;
-    font-weight: 0;
-}
-.profile-name-back{
-    margin-bottom: 0;
-}
-.adminCard{
-    box-shadow: 0px 0px 10px rgb(181, 175, 175);
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
-    height: 180px;
-}
 
-.adminTitle{
-    color: rgb(14, 123, 224);
-    margin-bottom: 0;
-    
-    padding-top: 5%;
-}
-
-.adminP{
-    margin: 0;
-}
-.adminP2{
-    margin-top: 0;
-    margin-bottom: 5%;
-}
-
-.adminBtn{
-    background-color: rgb(14, 123, 224) ;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-.adminDiv1{
+.dashboard-container {
     display: flex;
-    gap: 30px;
-    margin-top: 7%;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f8f9fa;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
 }
-.adminP2Testi{
-    font-size: 14px;
+
+
+.dashboard-content {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+
+.dashboard-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.dashboard-tip {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background-color: #e7f5ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 8px;
+    color: #0c5460;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dashboard-tip .icon {
+    font-size: 1.5rem;
 }

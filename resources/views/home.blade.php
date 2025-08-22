@@ -117,37 +117,30 @@
             <p><strong>Adresse :</strong> {{ $contact->street }} {{ $contact->number }}, {{ $contact->city }} {{ $contact->zip }}</p>
             <p><strong>Téléphone :</strong> {{ $contact->phone }}</p>
             <p><strong>Email :</strong> <a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></p>
-
-            
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.387899288147!2d4.3387872764033535!3d50.855466871672355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38e84af80dd%3A0xe85cd9cd0218a4aa!2sPl.%20de%20la%20Minoterie%2010%2C%201080%20Molenbeek-Saint-Jean!5e1!3m2!1sfr!2sbe!4v1755854131677!5m2!1sfr!2sbe" 
-                allowfullscreen 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q={{ urlencode($contact->street . ' ' . $contact->number . ', ' . $contact->zip . ' ' . $contact->city) }}&output=embed"></iframe>
         </div>
         
         <div class="contact-form">
-        <form action="#" method="POST">
-            <div class="form-row">
-                <div class="formContactFlex">
-                    <label for="">Your Name</label>
-                    <input type="text" name="name" placeholder="Votre nom">
-                </div>
-                <div class="formContactFlex">
-                    <label for="">Your Email</label>
-                    <input type="email" name="email" placeholder="Votre email">
-                </div>
-                
-            </div>
-            <div>
-                <label for="">Subject</label>
-                <input type="text" name="subject" placeholder="Sujet">
-            </div>
-            <label for="">Message</label>
-            <textarea name="message" rows="6"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+       <form action="{{ route('messages.store') }}" method="POST">
+    @csrf
+    <div class="form-row">
+        <div class="formContactFlex">
+            <label for="">Your Name</label>
+            <input type="text" name="nom" placeholder="Votre nom" required>
+        </div>
+        <div class="formContactFlex">
+            <label for="">Your Email</label>
+            <input type="email" name="email" placeholder="Votre email" required>
+        </div>
+    </div>
+    <div>
+        <label for="">Subject</label>
+        <input type="text" name="sujet" placeholder="Sujet" required>
+    </div>
+    <label for="">Message</label>
+    <textarea name="message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
     </div>
     </div>
 

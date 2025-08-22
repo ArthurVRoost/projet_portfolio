@@ -36,3 +36,242 @@
 .testimonial-item small {
   color: #555;
 }
+
+/* BACKEND */
+
+
+.testimonials-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+
+.testimonials-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.testimonials-btn-add {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.testimonials-btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Table */
+.testimonials-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.testimonials-table th,
+.testimonials-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.testimonials-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+.testimonials-img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+.testimonials-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.testimonials-btn-edit,
+.testimonials-btn-delete {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+}
+
+.testimonials-btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.testimonials-btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.testimonials-btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.testimonials-btn-delete:hover {
+    background-color: #b02a37;
+}
+
+
+.testimonials-form-delete {
+    display: inline;
+    margin: 0;
+}
+
+
+/* EDIT */
+
+
+
+.testimonials-edit-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    margin-left: 25%;
+}
+
+
+.testimonials-edit-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.testimonials-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.testimonials-edit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.testimonials-edit-group label {
+    font-weight: bold;
+    color: #444;
+}
+
+.testimonials-edit-group input,
+.testimonials-edit-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+
+.testimonials-edit-btn-submit {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.testimonials-edit-btn-submit:hover {
+    background-color: #218838;
+}
+
+
+/* CREATE  */
+
+
+
+.testimonials-create-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    margin-left: 25%;
+}
+
+
+.testimonials-create-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.testimonials-create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.testimonials-create-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.testimonials-create-group label {
+    font-weight: bold;
+    color: #444;
+}
+
+.testimonials-create-group input,
+.testimonials-create-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+
+.testimonials-create-btn-submit {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.testimonials-create-btn-submit:hover {
+    background-color: #218838;
+}

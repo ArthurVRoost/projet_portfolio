@@ -45,3 +45,222 @@
   cursor: default;
 }
 
+.page3{
+  width: 80%;
+}
+
+/* BACKEND */
+
+/* Skill Create Styles */
+.skillCreate-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skillCreate-title {
+    color: #153A6C;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skillCreate-backLink {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.skillCreate-backLink:hover {
+    background-color: #5a6268;
+    color: white;
+    text-decoration: none;
+}
+
+.skillCreate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skillCreate-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skillCreate-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.skillCreate-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.skillCreate-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.skillCreate-numberInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.skillCreate-numberInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.skillCreate-submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.skillCreate-submitButton:hover {
+    background-color: #218838;
+}
+
+
+/* EDIT  */
+
+/* Skill Edit Styles */
+.skillEdit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skillEdit-title {
+    color: #153A6C;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skillEdit-backLink {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.skillEdit-backLink:hover {
+    background-color: #5a6268;
+    color: white;
+    text-decoration: none;
+}
+
+.skillEdit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skillEdit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skillEdit-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.skillEdit-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.skillEdit-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.skillEdit-numberInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.skillEdit-numberInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.skillEdit-submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.skillEdit-submitButton:hover {
+    background-color: #0056b3;
+}
+

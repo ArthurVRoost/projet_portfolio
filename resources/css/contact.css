@@ -84,3 +84,9 @@
     display: flex;
     flex-direction: column;
 }
+
+/* BACKEND */
+
+.contactForm{
+    max-width: 900px;
+}

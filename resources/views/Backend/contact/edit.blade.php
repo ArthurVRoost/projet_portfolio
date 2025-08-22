@@ -1,7 +1,7 @@
 @extends('layouts.backend.app')
 
 @section('content')
-<div class="container mt-5">
+<div class="container contactForm page2 mt-5">
     <h2>Modifier le contact</h2>
 
     

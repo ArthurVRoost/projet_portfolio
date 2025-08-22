@@ -1,3 +1,4 @@
+
 <nav class="sidebar">
         <div class="profile-section-back">
             <div class="profile-image-back">
@@ -30,12 +31,6 @@
                 <a href="{{ route('logout') }}" class="nav-link">
                     <i class="fas fa-sign-in-alt"></i>
                     Log Out
-                </a>
-            </li>
-            <li class="nav-item-back">
-                <a href="{{ route('home') }}" class="nav-link ">
-                    <i class="fas fa-home"></i>
-                    Home
                 </a>
             </li>
             <li class="nav-item-back">
