@@ -11,19 +11,19 @@
         @method('PUT')
         
         <div class="portfolioEdit-group">
-            <label class="portfolioEdit-label">Image actuelle :</label>
+            <label class="portfolioEdit-label">Image actuelle:</label>
             <div class="portfolioEdit-imagePreview">
                 <img src="{{ asset($portfolio->img) }}" alt="Image" class="portfolioEdit-currentImage">
             </div>
         </div>
         
         <div class="portfolioEdit-group">
-            <label class="portfolioEdit-label">Nouvelle image (facultatif) :</label>
+            <label class="portfolioEdit-label">Nouvelle image:</label>
             <input type="file" name="img" class="portfolioEdit-fileInput">
         </div>
         
         <div class="portfolioEdit-group">
-            <label class="portfolioEdit-label">Filtre :</label>
+            <label class="portfolioEdit-label">Filtre:</label>
             <input type="text" name="filter" value="{{ $portfolio->filter }}" required class="portfolioEdit-textInput">
         </div>
         
