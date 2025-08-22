@@ -178,7 +178,6 @@ body {
 }
 
 .main-content {
-    margin-left: 280px;
     padding: 2rem;
     min-height: 100vh;
     display: flex;
@@ -196,8 +195,6 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #4a9eff 0%, #00d4ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 

@@ -4,8 +4,8 @@
 
 @section('content')
 @include('partials.navFront')
-<main class="main-content">
-        <div id="home" class="hero-section">
+    <main class="main-content" style="background-image: url({{ asset("storage/portfolio-assets/bgBlue2.jpeg") }}); height: 100vh; width: 100vw; background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div id="home" class="hero-section" >
             <h1 class="hero-title">Gary Axen</h1>
             <p class="hero-subtitle">I'm a Developer</p>
         </div>
