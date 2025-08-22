@@ -8,7 +8,7 @@
 
     <form action="{{ route('services.store') }}" method="POST" class="serviceCreate-form">
         @csrf
-        
+        {{-- UN SELECT AVEC LES CLASSES ECRITES COMME DANS LE SEEDER  --}}
         <div class="serviceCreate-group">
             <label class="serviceCreate-label">Icon :</label>
             <select name="icon" required class="serviceCreate-select">
