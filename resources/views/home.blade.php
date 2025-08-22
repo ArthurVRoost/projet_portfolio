@@ -74,21 +74,27 @@
             </div>
         </div>
         <div>
-            <h2 class="mt-5" id="services">Services</h2>
+            <h2 class="mt-5 titreAbout" id="services">Services</h2>
+            <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
             <div>
-                <div class="services-list" style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
+                <div class="services-list">
                     @foreach ($services as $service)
-                        <div class="service-item" style="width:250px; padding:15px; border:1px solid #ddd; border-radius:8px; text-align:center;">
-                            <i class="{{ $service->icon }}" style="font-size:40px; margin-bottom:10px;"></i>
-                            <h3 style="margin:10px 0;">{{ $service->title }}</h3>
-                            <p>{{ $service->text }}</p>
+                        <div class="service-item">
+                            <div>
+                                <i class="{{ $service->icon }}"></i>
+                            </div>
+                            <div class="divServiceText">
+                                <h3 class="serviceH3">{{ $service->title }}</h3>
+                                <p class="serviceP">{{ $service->text }}</p>
+                            </div>
                         </div>
                     @endforeach
-            </div>
+                </div>
         </div>
         </div>
         <div>
-            <h2 class="mt-5" id="testemonials">Testimonials</h2>
+            <h2 class="mt-5 titreAbout" id="testemonials">Ils m'ont fait confiance...</h2>
+            <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
             <div class="testimonials-list" style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
                 @foreach($testimonials as $testimonial)
                     <div class="testimonial-item" style="width:250px; padding:15px; border:1px solid #ddd; border-radius:8px; text-align:center;">

@@ -3,6 +3,10 @@
 @import './about.css';
 @import './skills.css';
 @import './portfolio.css';
+@import './services.css';
+
+
+
 * {
     margin: 0;
     padding: 0;

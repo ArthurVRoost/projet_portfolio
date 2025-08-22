@@ -1,0 +1,40 @@
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px; /* espace entre les cards */
+  margin-top: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f9faff; 
+  border-radius: 8px; 
+}
+
+.service-item i {
+  font-size: 20px;
+  color: white;
+  background-color: #3b9fc6; 
+  padding: 15px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.serviceH3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.serviceP{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.divServiceText{
+    margin-left: 5%;
+}
