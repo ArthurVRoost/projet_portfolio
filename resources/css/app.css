@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import './about.css';
+@import './skills.css';
+@import './portfolio.css';
 * {
     margin: 0;
     padding: 0;
@@ -257,3 +259,4 @@ body {
 }.portfolioContentBack{
     margin-left: 20%;
 }
+

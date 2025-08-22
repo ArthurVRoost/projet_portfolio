@@ -1,0 +1,47 @@
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  margin-top: 20px;
+  max-width: 900px; 
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-item label {
+  width: 80px; 
+}
+
+.skill-item input {
+  flex: 1; 
+}
+.skill-item input[type="range"] {
+  
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #d9e2ec; 
+  border-radius: 0; 
+  overflow: hidden;
+}
+
+.skill-item input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #d9e2ec;
+  border-radius: 0; 
+}
+
+.skill-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 8px;
+  box-shadow: -1000px 0 0 1000px #1e9dd8; 
+  background: transparent;
+  cursor: default;
+}
+

@@ -4,7 +4,7 @@
 
 @section('content')
 @include('partials.navFront')
-    <main class="main-content" style="background-image: url({{ asset("storage/portfolio-assets/bgBlue2.jpeg") }}); height: 100vh; width: 100vw; background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <main class="main-content" style="background-image: url({{ asset("storage/portfolio-assets/bgBlue2.jpeg") }}); height: 100vh; width: 94.3vw; background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div id="home" class="hero-section" >
             <h1 class="hero-title">Gary Axen</h1>
             <p class="hero-subtitle">I'm a Developer</p>
@@ -45,9 +45,10 @@
         <div>
             <h2 class="mt-5 titreAbout" id="skills">Skills</h2>
             <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
-            <div class="skills-list" style="display:flex; flex-direction:column; gap:15px; margin-top:20px; max-width:600px;">
+            <div class="skills-list" >
                 @foreach ($skills as $skill)
                     <div class="skill-item" style="display:flex; align-items:center; gap:10px;">
+                        
                         <label style="width:100px;">{{ $skill->skill }}</label>
                         <input type="range" value="{{ $skill->pourcentage }}" max="100" disabled style="flex:1;">
                         <span>{{ $skill->pourcentage }}%</span>
@@ -56,14 +57,21 @@
             </div>
         </div>
         <div>
-            <h2 class="mt-5" id="portfolio">Portfolio</h2>
-            @foreach ( $portfolios as $portfolio )
-                <div class="portfolio-item" style="width:200px; text-align:center;">
-                    <img src="{{ asset($portfolio->img) }}"  alt="" style="width:100%; border-radius:8px; object-fit:cover;">
-                </div>
-            @endforeach
-            
-
+            <h2 class="mt-5 titreAbout" id="portfolio">Portfolio</h2>
+            <p class="aboutPText">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupidate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste ofiicis commodi quidem hic quas.</p>
+            <div class="divPortfolio1">
+                <p> <span class="portfolioSpan">ALL</span> </p>
+                <p class="portfolioP">APP</p>
+                <p class="portfolioP">WEB</p>
+                <p class="portfolioP">CARD</p>
+            </div>
+            <div class="portfolio-container">
+                @foreach ($portfolios as $portfolio)
+                    <div class="portfolio-item">
+                        <img src="{{ asset($portfolio->img) }}" alt="">
+                    </div>
+                @endforeach
+            </div>
         </div>
         <div>
             <h2 class="mt-5" id="services">Services</h2>

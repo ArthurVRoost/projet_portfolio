@@ -1,0 +1,29 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.divPortfolio1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(230, 225, 225, 0.729);
+    border-radius: 30px;
+    align-items: center;
+    padding-top: 1.5%;
+}
+.portfolioSpan{
+    color: rgb(49, 176, 219);
+}
