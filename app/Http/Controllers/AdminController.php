@@ -9,7 +9,7 @@ use App\Models\Service;
 use App\Models\Skill;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
-
+// COMME LE HOMECONTROLLER ON RECUP TOUTES LES VARIABLES 
 class AdminController extends Controller
 {
     public function index()
