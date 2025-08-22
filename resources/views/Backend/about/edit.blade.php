@@ -4,7 +4,7 @@
 
 <div class="about-form-container">
     <h2 class="about-form-title">Modifier le profil About</h2>
-
+    {{-- METHODE PUT POUR UPDATE --}}
     <form action="{{ route('about.update', $about->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
