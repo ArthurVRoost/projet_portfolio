@@ -6,6 +6,8 @@
 @import './services.css';
 @import './testimonials.css';
 @import './contact.css';
+@import './adminHome.css';
+
 
 * {
     margin: 0;

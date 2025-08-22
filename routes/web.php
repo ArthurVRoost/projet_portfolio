@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AvatarController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -71,9 +72,7 @@ Route::prefix('admin')->group(function () {
     Route::delete('messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 });
 
-Route::get('/admin/dashboard', function () {
-    return view('Backend.admin'); 
-})->name('admin.dashboard');
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
 
 Route::get('/logout', function () {
     return redirect()->route('home');

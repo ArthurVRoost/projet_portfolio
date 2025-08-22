@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function edit($id){
         $contact = Contact::findOrFail($id);
-        return view('Backend.contact.edit', compact('$contact'));
+        return view('Backend.contact.edit', compact('contact'));
     }
 
     public function update(Request $request, $id){
