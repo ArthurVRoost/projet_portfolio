@@ -4,8 +4,8 @@
 @import './skills.css';
 @import './portfolio.css';
 @import './services.css';
-
-
+@import './testimonials.css';
+@import './contact.css';
 
 * {
     margin: 0;
