@@ -21,6 +21,13 @@
                     <a href="{{ route('services.edit', $service) }}" class="serviceIndex-editLink">Éditer</a>
                     
                 </div>
+                <form action="{{ route('services.destroy', $service->id) }}" method="POST" style="display:inline-block;" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce service ?');">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    Supprimer
+                                </button>
+                            </form>
             </li>
         @endforeach
     </ul>
