@@ -20,12 +20,12 @@ class MessageController extends Controller
         'message' => $request->message,
     ]);
     // VU QU'ON VEUT PAS REDIRIGER VERS UNE QUELCONQUE VIEW ON AFFICHE UN MESSAGE POUR FAIRE COMPRENDRE QUE CA A MARCHE
-    return back()->with('success', 'Message envoyé avec succès !');
+    return back()->with('success', 'C est bon ouais');
     }
     public function destroy($id){
     $message = Message::findOrFail($id);
     $message->delete();
 
-    return redirect()->route('messages.index')->with('success', 'Message supprimé avec succès !');
+    return redirect()->route('messages.index')->with('success', 'C est delete ouais');
     }
 }

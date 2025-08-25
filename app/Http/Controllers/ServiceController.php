@@ -19,12 +19,7 @@ class ServiceController extends Controller
 
     
     public function store(Request $request){
-        $request->validate([
-            'icon'  => 'required|string|max:255',
-            'title' => 'required|string|max:255',
-            'text'  => 'required|string',
-        ]);
-
+       
         Service::create($request->all());
 
         return redirect()->route('services.index');
@@ -39,7 +34,7 @@ class ServiceController extends Controller
     
     public function update(Request $request, $id){
         $service = Service::findOrFail($id);
-
+        // VERSION COURTE 
         $service->update($request->all());
 
         return redirect()->route('services.index');
