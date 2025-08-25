@@ -2,7 +2,7 @@
 <nav class="sidebar">
         <div class="profile-section-back">
             <div class="profile-image-back">
-                <img src="{{ $about->avatar->image }}" alt="Gary Axen">
+                <img src="{{ asset($about->avatar->image)}}" alt="Gary Axen">
             </div>
             <h2 class="profile-name-back">Gary Axen</h2>
             <h3 class="h3ADMIN">ADMIN</h3>
