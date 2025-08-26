@@ -6,7 +6,7 @@
 
 <div class="skillEdit-container">
     <h1 class="skillEdit-title">Éditer le Skill : {{ $skill->skill }}</h1>
-    <a href="{{ route('skills.index') }}" class="skillEdit-backLink">Retour</a>
+    
 
     <form action="{{ route('skills.update', $skill->id) }}" method="POST" class="skillEdit-form">
         @csrf
